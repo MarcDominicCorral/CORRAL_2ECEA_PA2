@@ -20,12 +20,12 @@ import numpy as np #Imports numpy to the code.
 X = np.random.random((5,5)) #This creates a random 5x5 array and stores it to variable X.
 X
 ```
-3.) Use .mean() to compute for the average.
+3.) Use ".mean()" to compute for the average.
 ```python
 M = X.mean() #This gets the mean from the variable X and stores it to variable M.
 M
 ```
-4.) Use .std() to compute for the standard deviation.
+4.) Use ".std()" to compute for the standard deviation.
 ```python
 STD = X.std() #This gets the standard deviation from variable X and stores it to variable STD.
 STD
@@ -39,7 +39,7 @@ By translating the formula into a Python Code.
 Z = (X-M)/STD #This solves the Normalization using the formula and saves it to the variable Z.
 Z
 ```
-6.) Using np.save(), save the certain variable into the numpy file.
+6.) Using "np.save()", save the certain variable into the numpy file.
 ```python
 np.save("X_normalized.npy" , Z) #This saves the Normalization Code into ther Numpy file
 ```
@@ -90,17 +90,17 @@ import numpy as np #Imports numpy to the code.
 A = np.arrange(1,101) #This gets an array with elements of 1-100 and stores it in the variable A.
 A
 ```
-3.) Using .reshape(), reshape the array into a 10x10 array and square the result inside the array using the arithmetic **2.
+3.) Using ".reshape()", reshape the array into a 10x10 array and square the result inside the array using the arithmetic "**2".
 ```python
 np.shape(A) #This loads the shape of the Array A.
 
 square = A.reshape(10,10)**2 #This reshapes Array A into a 10x10 Array and squaring each and every element inside the array by the function "**2" and stores it in variable square.
 ```
-4.) Using modulo(%) arithmetic, get the divisible by 3 and equate the results to zero.
+4.) Using "modulo(%)" arithmetic, get the divisible by 3 and equate the results to zero.
 ```python
 divisible_by_3 = square[square%3 == 0] #This takes all the variables of array square and looks for every element divisible by 3 using modulo "%3" and stores it in variable divisible_by_3.
 ```
-5.) Using np.save, save the divisible by 3 variable into a numpy file.
+5.) Using "np.save", save the divisible by 3 variable into a numpy file.
 ```python
 np.save ("div_by_3.npy", divisible_by_3) #This saves the code into the Numpy file.
 ```
