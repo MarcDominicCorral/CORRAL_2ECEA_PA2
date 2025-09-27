@@ -10,7 +10,7 @@ Normalization is one of the most basic preprocessing techniques in
 data analytics. This involves centering and scaling process. Centering means subtracting the data from the
 mean and scaling means dividing with its standard deviation. 
 
-# Steps
+# Steps:
 1.) Import numpy into the Python Code.
 ```python
 import numpy as np #Imports numpy to the code.
